@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
@@ -42,14 +43,13 @@ namespace TestingBookSwagon.Steps
         [Given(@"I click login button")]
         public void GivenIClickLoginButton()
         {
-            loginPage.ClickLogin();
+            loginPage.ClickLoginButton();
         }
 
         [Then(@"I should see My Account")]
         public void IShouldSeeMyAccount()
         {
-            //ScenarioContext.Current.Pending();
-            //webDriver.Close();
+            Assert.That(loginPage.IsMyAccountExist(), Is.True);
         }
     }
 }

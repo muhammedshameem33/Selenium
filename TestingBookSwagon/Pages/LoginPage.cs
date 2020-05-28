@@ -9,34 +9,33 @@ namespace TestingBookSwagon.Pages
     {
         public IWebDriver WebDriver { get; }
 
-
         public LoginPage(IWebDriver webDriver)
         {
             WebDriver = webDriver;
         }
 
         //UI elements
-        public IWebElement lnkLogin => WebDriver.FindElement(By.XPath("//div[@id='ctl00_divLogin']"));
+        public IWebElement login => WebDriver.FindElement(By.XPath("//div[@id='ctl00_divLogin']"));
 
-        public IWebElement txtEmail => WebDriver.FindElement(By.Id("ctl00_phBody_SignIn_txtEmail"));
+        public IWebElement email => WebDriver.FindElement(By.Id("ctl00_phBody_SignIn_txtEmail"));
 
-        public IWebElement txtPassword => WebDriver.FindElement(By.Id("ctl00_phBody_SignIn_txtPassword"));
+        public IWebElement password => WebDriver.FindElement(By.Id("ctl00_phBody_SignIn_txtPassword"));
 
-        public IWebElement btnLogin => WebDriver.FindElement(By.Id("ctl00_phBody_SignIn_txtPassword"));
+        public IWebElement submit => WebDriver.FindElement(By.Id("ctl00_phBody_SignIn_txtPassword"));
 
-        public IWebElement lnkMyAccount => WebDriver.FindElement(By.LinkText("My Account"));
+        public IWebElement myAccount => WebDriver.FindElement(By.Id("ctl00_lblUser"));
 
-        public void ClickLogin() => lnkLogin.Click();
+        public void ClickLogin() => login.Click();
 
         public void Login(string email,string password)
         {
-            txtEmail.SendKeys(email);
-            txtPassword.SendKeys(password);
+            this.email.SendKeys(email);
+            this.password.SendKeys(password);
         }
-        //sir it's displayed already
-        public void ClickLoginButton() => btnLogin.Click();
 
-        public bool IsMyAccountExist() => lnkMyAccount.Displayed;
+        public void ClickLoginButton() => this.submit.Click();
+
+        public bool IsMyAccountExist() => this.myAccount.Displayed;
 
     }
 }

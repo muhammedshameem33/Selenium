@@ -1,11 +1,9 @@
 ﻿Feature: SearchBookFeature
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	Search for a book in Book Swagon Application
 
-@mytag
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+@smoke
+Scenario: Perform Search for given keyword in Book Swagon Site and navigate to search result page
+	Given I have launch the Book Swagon Application
+	And I entered computer as search keyword
+	When I press the search button
+	Then I should be navigate to search result page
