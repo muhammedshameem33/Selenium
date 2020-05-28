@@ -21,11 +21,11 @@ namespace TestingBookSwagon.Pages
 
         public IWebElement password => WebDriver.FindElement(By.Id("ctl00_phBody_SignIn_txtPassword"));
 
-        public IWebElement submit => WebDriver.FindElement(By.Id("ctl00_phBody_SignIn_txtPassword"));
+        public IWebElement submit => WebDriver.FindElement(By.Id("ctl00_phBody_SignIn_btnLogin"));
 
         public IWebElement myAccount => WebDriver.FindElement(By.Id("ctl00_lblUser"));
 
-        public void ClickLogin() => login.Click();
+        public void ClickLogin() => this.login.Click();
 
         public void Login(string email,string password)
         {
@@ -33,7 +33,7 @@ namespace TestingBookSwagon.Pages
             this.password.SendKeys(password);
         }
 
-        public void ClickLoginButton() => this.submit.Click();
+        public void ClickLoginButton() => this.submit.Submit();
 
         public bool IsMyAccountExist() => this.myAccount.Displayed;
 

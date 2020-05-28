@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 using TestingBookSwagon.Pages;
@@ -14,15 +15,13 @@ namespace TestingBookSwagon.Steps
     [Binding]
     public sealed class LoginSteps
     {
-        IWebDriver webDriver = new ChromeDriver();
+        IWebDriver webDriver = Factory.StartBrowser("chrome", "https://www.bookswagon.com");
         LoginPage loginPage = null;
 
         //step definitions
        [Given (@"I launch the application")]
        public void GivenILaunchTheApplication()
         {
-            webDriver.Manage().Window.Maximize();
-            webDriver.Navigate().GoToUrl("https://www.bookswagon.com");
             loginPage = new LoginPage(webDriver);
         }
 
@@ -49,7 +48,9 @@ namespace TestingBookSwagon.Steps
         [Then(@"I should see My Account")]
         public void IShouldSeeMyAccount()
         {
+            webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
             Assert.That(loginPage.IsMyAccountExist(), Is.True);
+            webDriver.Close();
         }
     }
 }
