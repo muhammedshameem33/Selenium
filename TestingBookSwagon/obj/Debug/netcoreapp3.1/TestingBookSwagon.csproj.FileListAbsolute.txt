@@ -108,4 +108,9 @@ C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\TestingBookSwagon\ob
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\TestingBookSwagon\obj\Debug\netcoreapp3.1\TestingBookSwagon.pdb
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\TestingBookSwagon\obj\Debug\netcoreapp3.1\TestingBookSwagon.genruntimeconfig.cache
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\TestingBookSwagon\obj\Debug\netcoreapp3.1\TestingBookSwagon.csprojAssemblyReference.cache
+C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\TestingBookSwagon\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\TestingBookSwagon\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\TestingBookSwagon\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\TestingBookSwagon\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\TestingBookSwagon\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\TestingBookSwagon\obj\Debug\netcoreapp3.1\TestingBookSwagon.csproj.CoreCompileInputs.cache

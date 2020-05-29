@@ -4,6 +4,7 @@ using System;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 using TestingBookSwagon.Pages;
+using System.Drawing.Imaging;
 
 namespace TestingBookSwagon.Steps
 {
@@ -76,14 +77,17 @@ namespace TestingBookSwagon.Steps
         {
             webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
             buyBook.ClickBuyButton();
+            webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
         }
 
         
         [Then(@"I click place order button")]
         public void ThenIClickPlaceOrderButton()
         {
+            webDriver.SwitchTo().Frame(webDriver.FindElement(By.ClassName("cboxIframe")));
             placeOrderPage = new PlaceOrderPage(webDriver);
             placeOrderPage.ClickPlaceOrderButton();
+            webDriver.SwitchTo().DefaultContent();
             webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
         }
         
@@ -91,6 +95,8 @@ namespace TestingBookSwagon.Steps
         public void ThenIShouldSeeCheckoutPage()
         {
             webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            Screenshot screenshot = ((ITakesScreenshot)webDriver).GetScreenshot();
+            screenshot.SaveAsFile(@"C:\Users\Muhammed Shahan\Desktop\test.Png", ScreenshotImageFormat.Png);
             webDriver.Close();
         }
     }
