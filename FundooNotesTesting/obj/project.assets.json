@@ -689,7 +689,7 @@
       "Selenium.WebDriver.ChromeDriver/83.0.4103.3900": {
         "type": "package",
         "build": {
-          "build/_._": {}
+          "build/Selenium.WebDriver.ChromeDriver.targets": {}
         }
       },
       "SpecFlow/3.1.97": {
@@ -710,7 +710,7 @@
           "lib/netstandard2.0/TechTalk.SpecFlow.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/SpecFlow.targets": {}
         }
       },
       "SpecFlow.Assist.Dynamic/1.4.2": {
@@ -739,7 +739,8 @@
           "lib/netstandard2.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll": {}
         },
         "build": {
-          "build/_._": {}
+          "build/SpecFlow.NUnit.props": {},
+          "build/SpecFlow.NUnit.targets": {}
         }
       },
       "SpecFlow.Tools.MsBuild.Generation/3.1.97": {
@@ -748,10 +749,11 @@
           "SpecFlow": "[3.1.97]"
         },
         "build": {
-          "build/_._": {}
+          "build/SpecFlow.Tools.MsBuild.Generation.props": {},
+          "build/SpecFlow.Tools.MsBuild.Generation.targets": {}
         },
         "buildMultiTargeting": {
-          "buildMultiTargeting/_._": {}
+          "buildMultiTargeting/SpecFlow.Tools.MsBuild.Generation.props": {}
         }
       },
       "System.AppContext/4.1.0": {
@@ -1890,29 +1892,6 @@
         },
         "runtime": {
           "lib/netstandard2.0/Utf8Json.dll": {}
-        }
-      },
-      "TestingBookSwagon/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
-          "Microsoft.NET.Test.Sdk": "16.4.0",
-          "NUnit3TestAdapter": "3.15.1",
-          "Selenium.WebDriver": "3.141.0",
-          "Selenium.WebDriver.ChromeDriver": "83.0.4103.3900",
-          "SpecFlow": "3.1.97",
-          "SpecFlow.Assist.Dynamic": "1.4.2",
-          "SpecFlow.NUnit": "3.1.97",
-          "SpecFlow.Tools.MsBuild.Generation": "3.1.97",
-          "System.Drawing.Common": "4.7.0",
-          "nunit": "3.12.0"
-        },
-        "compile": {
-          "bin/placeholder/TestingBookSwagon.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TestingBookSwagon.dll": {}
         }
       }
     }
@@ -6455,18 +6434,20 @@
         "utf8json.1.3.7.nupkg.sha512",
         "utf8json.nuspec"
       ]
-    },
-    "TestingBookSwagon/1.0.0": {
-      "type": "project",
-      "path": "../TestingBookSwagon/TestingBookSwagon.csproj",
-      "msbuildProject": "../TestingBookSwagon/TestingBookSwagon.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "DotNetSeleniumExtras.WaitHelpers >= 3.11.0",
       "Microsoft.NET.Test.Sdk >= 16.4.0",
       "NUnit3TestAdapter >= 3.15.1",
-      "TestingBookSwagon >= 1.0.0",
+      "Selenium.WebDriver >= 3.141.0",
+      "Selenium.WebDriver.ChromeDriver >= 83.0.4103.3900",
+      "SpecFlow >= 3.1.97",
+      "SpecFlow.Assist.Dynamic >= 1.4.2",
+      "SpecFlow.NUnit >= 3.1.97",
+      "SpecFlow.Tools.MsBuild.Generation >= 3.1.97",
+      "System.Drawing.Common >= 4.7.0",
       "nunit >= 3.12.0"
     ]
   },
@@ -6495,11 +6476,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {
-            "C:\\Users\\Muhammed Shahan\\Desktop\\Selenium\\TestingBookSwagon\\TestingBookSwagon\\TestingBookSwagon.csproj": {
-              "projectPath": "C:\\Users\\Muhammed Shahan\\Desktop\\Selenium\\TestingBookSwagon\\TestingBookSwagon\\TestingBookSwagon.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -6511,6 +6488,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "DotNetSeleniumExtras.WaitHelpers": {
+            "target": "Package",
+            "version": "[3.11.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.4.0, )"
@@ -6518,6 +6499,34 @@
           "NUnit3TestAdapter": {
             "target": "Package",
             "version": "[3.15.1, )"
+          },
+          "Selenium.WebDriver": {
+            "target": "Package",
+            "version": "[3.141.0, )"
+          },
+          "Selenium.WebDriver.ChromeDriver": {
+            "target": "Package",
+            "version": "[83.0.4103.3900, )"
+          },
+          "SpecFlow": {
+            "target": "Package",
+            "version": "[3.1.97, )"
+          },
+          "SpecFlow.Assist.Dynamic": {
+            "target": "Package",
+            "version": "[1.4.2, )"
+          },
+          "SpecFlow.NUnit": {
+            "target": "Package",
+            "version": "[3.1.97, )"
+          },
+          "SpecFlow.Tools.MsBuild.Generation": {
+            "target": "Package",
+            "version": "[3.1.97, )"
+          },
+          "System.Drawing.Common": {
+            "target": "Package",
+            "version": "[4.7.0, )"
           },
           "nunit": {
             "target": "Package",

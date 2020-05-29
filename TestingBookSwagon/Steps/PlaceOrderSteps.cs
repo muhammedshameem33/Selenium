@@ -95,8 +95,6 @@ namespace TestingBookSwagon.Steps
         public void ThenIShouldSeeCheckoutPage()
         {
             webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            Screenshot screenshot = ((ITakesScreenshot)webDriver).GetScreenshot();
-            screenshot.SaveAsFile(@"C:\\Users\\Muhammed Shahan\\Desktop\\ss\\test.Png", ScreenshotImageFormat.Png);
             webDriver.Close();
         }
     }

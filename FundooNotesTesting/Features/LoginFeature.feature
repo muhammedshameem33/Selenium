@@ -1,11 +1,11 @@
 ﻿Feature: LoginFeature
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	Login to Fundoo Notes Application
 
-@mytag
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+@smoke
+Scenario: Perform Login of Fundoo Notes Application
+	Given I launch the application
+	And I enter the following details
+		| Email               | Password |
+		| demod5429@gmail.com | asd      |
+	And I click login button
+	Then I should see dashboard of Fundoo Notes Application
