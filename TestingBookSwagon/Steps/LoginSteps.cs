@@ -50,7 +50,6 @@ namespace TestingBookSwagon.Steps
         {
             webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
             Assert.That(loginPage.IsMyAccountExist(), Is.True);
-            webDriver.Close();
         }
     }
 }

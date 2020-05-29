@@ -37,7 +37,6 @@ namespace TestingBookSwagon.Steps
             webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
             Assert.That(searchPage.IsShowResultExist(), Is.True);
             webDriver.Manage().Timeouts().ImplicitWait= TimeSpan.FromSeconds(25);
-            webDriver.Close();
         }
     }
 }

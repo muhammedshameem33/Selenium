@@ -108,3 +108,4 @@ C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\TestingBookSwagon\ob
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\TestingBookSwagon\obj\Debug\netcoreapp3.1\TestingBookSwagon.pdb
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\TestingBookSwagon\obj\Debug\netcoreapp3.1\TestingBookSwagon.genruntimeconfig.cache
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\TestingBookSwagon\obj\Debug\netcoreapp3.1\TestingBookSwagon.csprojAssemblyReference.cache
+C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\TestingBookSwagon\obj\Debug\netcoreapp3.1\TestingBookSwagon.csproj.CoreCompileInputs.cache
