@@ -1,11 +1,17 @@
 ﻿Feature: PlaceOrder
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
 
 @smoke
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+Scenario: placing order of the book which is in the shopping cart of Book Swagon Site and navite to checkout page
+	Given I launched the site
+	And I clicked login 
+	And I enterered the following details
+		| Email               | Password |
+		| demod5429@gmail.com | demodemo |
+	And I clicked login buttn
+	And I enter compter as search keyword
+	When I clicked the search button
+	Then I should be navigate to result page
+	And I click the first book link
+	And I clicked the Buy Now button
+	And I click place order button
+	Then I should see checkout Page
