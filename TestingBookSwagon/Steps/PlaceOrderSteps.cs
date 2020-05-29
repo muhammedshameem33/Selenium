@@ -96,7 +96,7 @@ namespace TestingBookSwagon.Steps
         {
             webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             Screenshot screenshot = ((ITakesScreenshot)webDriver).GetScreenshot();
-            screenshot.SaveAsFile(@"C:\Users\Muhammed Shahan\Desktop\test.Png", ScreenshotImageFormat.Png);
+            screenshot.SaveAsFile(@"C:\\Users\\Muhammed Shahan\\Desktop\\ss\\test.Png", ScreenshotImageFormat.Png);
             webDriver.Close();
         }
     }
