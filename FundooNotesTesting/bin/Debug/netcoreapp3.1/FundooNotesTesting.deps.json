@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "FundooNotesTesting/1.0.0": {
         "dependencies": {
+          "DotNetSeleniumExtras.PageObjects": "3.11.0",
           "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
           "Microsoft.NET.Test.Sdk": "16.4.0",
           "NUnit3TestAdapter": "3.15.1",
@@ -40,6 +41,17 @@
           "lib/netstandard2.0/Cucumber.Messages.dll": {
             "assemblyVersion": "6.0.1.0",
             "fileVersion": "6.0.1.0"
+          }
+        }
+      },
+      "DotNetSeleniumExtras.PageObjects/3.11.0": {
+        "dependencies": {
+          "Selenium.WebDriver": "3.141.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SeleniumExtras.PageObjects.dll": {
+            "assemblyVersion": "3.11.0.0",
+            "fileVersion": "3.11.0.0"
           }
         }
       },
@@ -1266,6 +1278,13 @@
       "sha512": "sha512-R/2XAU6Zwdnlgga/YLYxwbKf4ai0JYyeX25l85t0nNgagR2aP8hnqrLtJjgswuXVa2WlQdjXUfJqUX8YTjzlXw==",
       "path": "cucumber.messages/6.0.1",
       "hashPath": "cucumber.messages.6.0.1.nupkg.sha512"
+    },
+    "DotNetSeleniumExtras.PageObjects/3.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DJCLQ3beq1fzqpeQ5jTZwDqmzbOD2Xxsb/jCyShYam88CNwGGn5aBBqu4LVSj0sy0Ai76OauQQncYlC48VvQUQ==",
+      "path": "dotnetseleniumextras.pageobjects/3.11.0",
+      "hashPath": "dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512"
     },
     "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
       "type": "package",

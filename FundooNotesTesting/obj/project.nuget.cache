@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "SHws9B3bBWduMCiYRokZ8CeIE9UH5eUSXxFz/QQwxZybjlRHPRTVB/woPMEudCbYFJJ6gieLQdFNPi3vzl4B4g==",
+  "dgSpecHash": "JINltDGbVkTmSvpiSAsj0DZVTnW2eG1Z4H/JN5d3B83ZY1TkuTT5p+YsE7zoq7tBhX/QVZhmDOXI55PIyJQQ1w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Muhammed Shahan\\Desktop\\Selenium\\TestingBookSwagon\\FundooNotesTesting\\FundooNotesTesting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Muhammed Shahan\\.nuget\\packages\\bodi\\1.4.1\\bodi.1.4.1.nupkg.sha512",
     "C:\\Users\\Muhammed Shahan\\.nuget\\packages\\cucumber.messages\\6.0.1\\cucumber.messages.6.0.1.nupkg.sha512",
+    "C:\\Users\\Muhammed Shahan\\.nuget\\packages\\dotnetseleniumextras.pageobjects\\3.11.0\\dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
     "C:\\Users\\Muhammed Shahan\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\Muhammed Shahan\\.nuget\\packages\\dynamitey\\2.0.9.136\\dynamitey.2.0.9.136.nupkg.sha512",
     "C:\\Users\\Muhammed Shahan\\.nuget\\packages\\gherkin\\6.0.0\\gherkin.6.0.0.nupkg.sha512",

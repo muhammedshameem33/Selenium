@@ -8,9 +8,8 @@ using TechTalk.SpecFlow.Assist;
 namespace FundooNotesTesting.Steps
 {
     [Binding]
-    public class LoginFeatureSteps
+    public class LoginFeatureSteps : FactoryLoginPageDriver
     {
-        IWebDriver webDriver = Factory.StartBrowser("chrome", "http://localhost:4200/login");
         LoginPage loginPage = null;
 
         [Given(@"I launch the application")]
@@ -38,7 +37,7 @@ namespace FundooNotesTesting.Steps
         {
             Screenshot screenshot = ((ITakesScreenshot)webDriver).GetScreenshot();
             screenshot.SaveAsFile(@"C:\\Users\\Muhammed Shahan\\Desktop\\ss\\test.Png", ScreenshotImageFormat.Png);
-            webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
             Assert.That(loginPage.IsDashboardDisplayed(), Is.True);
         }
     }

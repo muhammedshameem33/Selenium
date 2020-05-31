@@ -21,7 +21,7 @@ namespace FundooNotesTesting.Pages
 
         public IWebElement loginButton => webDriver.FindElement(By.XPath("//button[@class='mat-focus-indicator mat-raised-button mat-button-base mat-primary']"));
 
-        public IWebElement dashboard => webDriver.FindElement(By.XPath("/html[1]/body[1]/app-root[1]/app-login[1]/div[1]/mat-card[1]/form[1]/div[1]/div[1]/button[1]/span[1]"));
+        public IWebElement dashboard => webDriver.FindElement(By.XPath("/html[1]/body[1]/app-root[1]/app-dashboard[1]/div[1]/mat-toolbar[1]/h3[1]/img[1]"));
 
         public void Login(string email,string password)
         {

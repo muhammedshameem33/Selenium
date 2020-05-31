@@ -20,22 +20,22 @@ namespace FundooNotesTesting.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("RegisterFeature")]
-    public partial class RegisterFeatureFeature
+    [NUnit.Framework.DescriptionAttribute("ListViewFeature")]
+    public partial class ListViewFeatureFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "RegisterFeature.feature"
+#line 1 "ListViewFeature.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "RegisterFeature", "\tRegister Account for Fundoo Notes Application", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "ListViewFeature", "\tView the notes in list form in Fundoo Notes Application", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -74,13 +74,13 @@ namespace FundooNotesTesting.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Perform Registration of Fundoo Notes Application")]
+        [NUnit.Framework.DescriptionAttribute("1 Perform Login of Fundoo Notes Application")]
         [NUnit.Framework.CategoryAttribute("smoke")]
-        public virtual void PerformRegistrationOfFundooNotesApplication()
+        public virtual void _1PerformLoginOfFundooNotesApplication()
         {
             string[] tagsOfScenario = new string[] {
                     "smoke"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Perform Registration of Fundoo Notes Application", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("1 Perform Login of Fundoo Notes Application", null, new string[] {
                         "smoke"});
 #line 5
 this.ScenarioInitialize(scenarioInfo);
@@ -103,28 +103,58 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 6
- testRunner.Given("I launch the Fundoo application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I launch the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
-                            "FirstName",
-                            "LastName",
+                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
                             "Email",
-                            "Password",
-                            "ConfirmPassword"});
-                table8.AddRow(new string[] {
-                            "test",
-                            "test",
-                            "test@test1.com",
-                            "test",
-                            "test"});
+                            "Password"});
+                table5.AddRow(new string[] {
+                            "demod5429@gmail.com",
+                            "asd"});
 #line 7
- testRunner.And("I enter following details", ((string)(null)), table8, "And ");
+ testRunner.And("I enter the following details", ((string)(null)), table5, "And ");
 #line hidden
 #line 10
- testRunner.And("I click Register button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 11
- testRunner.Then("I should see Login Page of Fundoo Notes Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should see dashboard of Fundoo Notes Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("2 Perform the viewing of notes in list form in Fundoo Notes Application")]
+        public virtual void _2PerformTheViewingOfNotesInListFormInFundooNotesApplication()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("2 Perform the viewing of notes in list form in Fundoo Notes Application", null, ((string[])(null)));
+#line 12
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 13
+ testRunner.When("I click on List view Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 14
+ testRunner.Then("I should see the notes in list format", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

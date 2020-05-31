@@ -26,6 +26,18 @@
           "lib/netstandard2.0/Cucumber.Messages.dll": {}
         }
       },
+      "DotNetSeleniumExtras.PageObjects/3.11.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "3.10.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SeleniumExtras.PageObjects.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SeleniumExtras.PageObjects.dll": {}
+        }
+      },
       "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
         "type": "package",
         "dependencies": {
@@ -1927,6 +1939,21 @@
         "cucumber.messages.nuspec",
         "lib/net45/Cucumber.Messages.dll",
         "lib/netstandard2.0/Cucumber.Messages.dll"
+      ]
+    },
+    "DotNetSeleniumExtras.PageObjects/3.11.0": {
+      "sha512": "DJCLQ3beq1fzqpeQ5jTZwDqmzbOD2Xxsb/jCyShYam88CNwGGn5aBBqu4LVSj0sy0Ai76OauQQncYlC48VvQUQ==",
+      "type": "package",
+      "path": "dotnetseleniumextras.pageobjects/3.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
+        "dotnetseleniumextras.pageobjects.nuspec",
+        "lib/net35/SeleniumExtras.PageObjects.dll",
+        "lib/net40/SeleniumExtras.PageObjects.dll",
+        "lib/net45/SeleniumExtras.PageObjects.dll",
+        "lib/netstandard2.0/SeleniumExtras.PageObjects.dll"
       ]
     },
     "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
@@ -6438,6 +6465,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "DotNetSeleniumExtras.PageObjects >= 3.11.0",
       "DotNetSeleniumExtras.WaitHelpers >= 3.11.0",
       "Microsoft.NET.Test.Sdk >= 16.4.0",
       "NUnit3TestAdapter >= 3.15.1",
@@ -6488,6 +6516,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "DotNetSeleniumExtras.PageObjects": {
+            "target": "Package",
+            "version": "[3.11.0, )"
+          },
           "DotNetSeleniumExtras.WaitHelpers": {
             "target": "Package",
             "version": "[3.11.0, )"

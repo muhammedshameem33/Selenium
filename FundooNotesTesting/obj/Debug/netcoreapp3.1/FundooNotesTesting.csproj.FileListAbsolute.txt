@@ -106,7 +106,6 @@ C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\FundooNotesTesting\b
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\FundooNotesTesting\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\FundooNotesTesting\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\FundooNotesTesting\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\FundooNotesTesting\obj\Debug\netcoreapp3.1\FundooNotesTesting.csproj.CoreCompileInputs.cache
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\FundooNotesTesting\obj\Debug\netcoreapp3.1\FundooNotesTesting.AssemblyInfoInputs.cache
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\FundooNotesTesting\obj\Debug\netcoreapp3.1\FundooNotesTesting.AssemblyInfo.cs
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\FundooNotesTesting\obj\Debug\netcoreapp3.1\FundooNotesTesting.csproj.CopyComplete
@@ -114,3 +113,5 @@ C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\FundooNotesTesting\o
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\FundooNotesTesting\obj\Debug\netcoreapp3.1\FundooNotesTesting.pdb
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\FundooNotesTesting\obj\Debug\netcoreapp3.1\FundooNotesTesting.genruntimeconfig.cache
 C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\FundooNotesTesting\obj\Debug\netcoreapp3.1\FundooNotesTesting.csprojAssemblyReference.cache
+C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\FundooNotesTesting\bin\Debug\netcoreapp3.1\SeleniumExtras.PageObjects.dll
+C:\Users\Muhammed Shahan\Desktop\Selenium\TestingBookSwagon\FundooNotesTesting\obj\Debug\netcoreapp3.1\FundooNotesTesting.csproj.CoreCompileInputs.cache
